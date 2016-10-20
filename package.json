@@ -1,0 +1,23 @@
+{
+  "name": "orlyyan",
+  "version": "1.0.0",
+  "description": "Orly's website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MeatPieYan/OrlyYan.git"
+  },
+  "keywords": [
+    "Orly",
+    "YanYiHan"
+  ],
+  "author": "RobinYan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MeatPieYan/OrlyYan/issues"
+  },
+  "homepage": "https://github.com/MeatPieYan/OrlyYan#readme"
+}
