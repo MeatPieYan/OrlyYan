@@ -1,0 +1,1 @@
+exports.photoProxy = require('./photoProxy');
