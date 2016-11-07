@@ -7,6 +7,8 @@ router.get('/hello', async (ctx, next) => {
   ctx.response.body = `<h1>hello world</h1>`;
 });
 
-router.get('/', photoController.getAllPhoto);
+router.get('/getAllPhoto', photoController.getAllPhoto);
+router.get('/getIndexPhoto', photoController.getIndexPhoto);
+router.get('/getLogo', photoController.getLogo);
 
 module.exports = router.routes();

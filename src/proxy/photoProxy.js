@@ -21,3 +21,17 @@ exports.getAllPhoto = async () => {
     });
   });
 }
+
+exports.getPhotoByPrefix = async (prefix) => {
+  return new Promise((resolve, reject) => {
+    qiniu.rsf.listPrefix(qiniuSettings.bucket, prefix, null, null, null, (err, result, response) => {
+      if(response.statusCode === 200) {
+        const photos = result.items.map((photo) => {
+          return {...photo, url: policy.makeRequest(baseDownloadUrl + photo.key)};
+        });
+        resolve(photos);
+      }
+      reject(err);
+    });
+  });
+}
