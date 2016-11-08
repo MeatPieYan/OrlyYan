@@ -37,3 +37,6 @@ MongoDB 七牛云存储(照片存储)
 #### MongoDB数据管理
 - [ ] 图片附加信息map
 - [ ] 分类目录信息
+
+#### AVA test
+- [ ] AVA Unit test

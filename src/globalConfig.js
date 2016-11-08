@@ -6,7 +6,9 @@ const config = {
     SECRET_KEY: "Ch6ryXhGwcLtCWmo92nmfnkCTw2bwm2Bx2exChSz",
     downloadUrl: "http://ofmte1256.bkt.clouddn.com/",
     bucket: "robincloud"
-  }
+  },
+
+  db: "mongodb://127.0.0.1/orly"
 };
 
 

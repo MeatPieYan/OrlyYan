@@ -5,6 +5,8 @@ const cors = require('koa-cors');
 const config = require('./globalConfig');
 const router = require('./routers');
 
+require('./models');
+
 const app = new Koa();
 
 app.use(cors());
