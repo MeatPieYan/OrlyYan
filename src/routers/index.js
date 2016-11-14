@@ -14,7 +14,7 @@ router.get('/getIndexPhoto', photoController.getIndexPhoto);
 router.get('/getLogo', photoController.getLogo);
 
 //page control
-router.get('/addCatagory', pageController.addCatagory);
+router.post('/addCatagory', pageController.addCatagory);
 router.get('/getCatagoryList', pageController.getCatagoryList);
 
 module.exports = router.routes();
