@@ -4,39 +4,27 @@
 日常管理应该是妈妈Kathy。
 持续制作中.....
 
-## 技术向
-### UI
-React Redux
+##### To-Do 本git repo暂时为网站后台。 等Ui完成后尝试服务器端渲染react
 
+## 技术向
 ### BE
-NodeJs Koa2
+NodeJs Koa2 ES6/7 Gulp Babel Git
 
 ### DB
 MongoDB 七牛云存储(照片存储)
 
 ### To-Do List
-#### 主页 (所有人)
-- [x] Logo
-- [x] 慢滚动照片墙
-- [x] 菜单
-
-#### 照片管理 (管理员)
-- [ ] 上传照片
-- [ ] 标记图片为精选
-- [ ] 标记图片为主页显示
-- [ ] 删除照片
-
-#### 相册
-- [ ] 相册分类(年份, 精选)
-- [ ] 照片展示
+#### API
+- [x]
 
 #### NodeJs
+- [x] 各种七牛云认证
 - [x] 从七牛获取图片Url
 - [ ] 上传照片到七牛
 
 #### MongoDB数据管理
-- [ ] 图片附加信息map
-- [ ] 分类目录信息
+- [x] 分类目录信息
+- [ ] 图片附加信息
 
 #### AVA test
-- [ ] AVA Unit test
+- [ ] AVA/Mocha Unit test
