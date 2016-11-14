@@ -6,16 +6,19 @@
 
 ##### To-Do 本git repo暂时为网站后台。 等Ui完成后尝试服务器端渲染react
 
-## 技术向
+## 技术栈
 ### BE
 NodeJs Koa2 ES6/7 Gulp Babel Git
 
 ### DB
 MongoDB 七牛云存储(照片存储)
 
-### To-Do List
+## To-Do List
 #### API
-- [x]
+- [x] 获取分类信息
+- [ ] 获取图片分类信息
+- [ ] 上传图片
+- [ ] 和控制台系统的各种API
 
 #### NodeJs
 - [x] 各种七牛云认证
@@ -28,3 +31,6 @@ MongoDB 七牛云存储(照片存储)
 
 #### AVA test
 - [ ] AVA/Mocha Unit test
+
+#### 控制台系统
+- [ ] 控制台系统
