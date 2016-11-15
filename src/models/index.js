@@ -12,5 +12,7 @@ mongoose.connect(config.db, {
 });
 
 require('./catagory');
+require('./photoProps');
 
 exports.CatagoryModel = mongoose.model('Catagory');
+exports.PhotoPropsModel = mongoose.model('PhotoProps');
