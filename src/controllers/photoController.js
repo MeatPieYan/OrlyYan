@@ -23,3 +23,19 @@ exports.getLogo = async (ctx, next) => {
 
   next();
 }
+
+exports.getPhotosByYear = async (ctx, next) => {
+  const year = ctx.params.year || 2016;
+  const photos = await photoProxy.getPhotoNameByYear(ctx.params.year);
+  ctx.response.type = 'text/html';
+  ctx.response.body = photos;
+
+  next();
+}
+
+exports.addPhotoPropsIntoMongo = async (ctx, next ) => {
+  const result = await photoProxy.addPhotoPropsIntoMongo();
+  ctx.response.body = result;
+
+  next();
+}
