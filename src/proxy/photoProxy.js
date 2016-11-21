@@ -46,7 +46,7 @@ exports.addPhotoPropsIntoMongo = async (photoInfo) => {
     isIndex: true,
     year: 2016,
     isFavorite: true,
-    url: 'http://ofmte1256.bkt.clouddn.com/IMG_3554.JPG?attname=&e=1479268341&token=3LzTa22u4UcAp6-tegplnPCJN-bHB_Ph6lZJP3Y7:w_XpDLNIcrTe413Zki3SjBbyxpk'
+    photoName: 'index_5.JPG'
   });
 
   return photoInfo.save();
@@ -54,4 +54,19 @@ exports.addPhotoPropsIntoMongo = async (photoInfo) => {
 
 exports.getPhotoNameByYear = async (year) => {
   return PhotoPropsModel.find({year}).exec();
+
+}
+
+exports.getPhotosByNames = async (photoName) => {
+  return new Promise((resolve, reject)=>{
+    if(!photoName){
+      reject("no photo from mongo");
+    }
+    const photos = photoName.map((photo)=>{
+      return {...photo.toObject(), url: policy.makeRequest(baseDownloadUrl + photo.photoName)};
+    });
+
+    resolve(photos);
+  });
+
 }

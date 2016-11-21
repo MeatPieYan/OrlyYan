@@ -26,7 +26,8 @@ exports.getLogo = async (ctx, next) => {
 
 exports.getPhotosByYear = async (ctx, next) => {
   const year = ctx.params.year || 2016;
-  const photos = await photoProxy.getPhotoNameByYear(ctx.params.year);
+  const photoNames = await photoProxy.getPhotoNameByYear(ctx.params.year);
+  const photos = await photoProxy.getPhotosByNames(photoNames);
   ctx.response.type = 'text/html';
   ctx.response.body = photos;
 
